@@ -21,7 +21,9 @@ export default function Sucess() {
             className="text-7xl text-green-700"
             style={{ display: "inline-block" }}
           />
-          <p className="text-green-700">Sucess submitted</p>
+          <p className="text-green-700 covered-by-your-grace-regular text-[36px]">
+            Sucess submitted
+          </p>
           <h2 className="text-4xl font-bold">Congratulations</h2>
           <p className="text-muted-foreground text-xl">
             Your request has been successfully submitted to us. We will validate

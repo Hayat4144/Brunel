@@ -4,6 +4,9 @@ import Navbar from "@/components/Navbar";
 import { FaArrowRightLong } from "react-icons/fa6";
 import "./index.css";
 import IMAGES from "./assets/images/Images";
+import AskQuestion from "./components/AskQuestion";
+import Footer from "./components/Footer";
+import HomeCrousel from "./components/HomeCrousel";
 
 function App() {
   return (
@@ -18,18 +21,13 @@ function App() {
             <h1 className="text-5xl">Every sucess journey we've encountered</h1>
           </div>
         </section>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <figure className="w-full h-[80%]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-16">
+          <figure className="w-full h-[75%]">
             <img className="w-full h-full" src={IMAGES.HomeImage} alt="image" />
           </figure>
 
           <div className="grid grid-rows-2 gap-10">
-            <div className="crousel">
-              <h2 className="text-3xl">
-                Enhance fortune 50 company's insights teams research
-                capibilities
-              </h2>
-            </div>
+            <HomeCrousel />
             <Button className="rounded-full w-fit h-14">
               Expolore more
               <FaArrowRightLong className="ml-2 h-4 w-4" />
@@ -37,6 +35,8 @@ function App() {
           </div>
         </div>
       </main>
+      <AskQuestion />
+      <Footer />
     </Fragment>
   );
 }

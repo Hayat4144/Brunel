@@ -2,6 +2,7 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { IoIosClose } from "react-icons/io";
+import IMAGES from "@/assets/images/Images";
 
 export default function Navbar() {
   const location = useLocation();
@@ -14,7 +15,7 @@ export default function Navbar() {
           "border rounded-full": !isRegisterPage,
         })}
       >
-        <h1>Brunel</h1>
+        <img src={IMAGES.LogoImage} alt="Brunel" />
         {isRegisterPage ? (
           <Link
             to={"/"}
